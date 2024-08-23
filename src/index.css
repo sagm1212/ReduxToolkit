@@ -1,0 +1,92 @@
+
+button {
+  padding: 6px 12px;
+  outline: none;
+  border-radius: 3px;
+  width: 98px;
+  margin: 4px;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.rojo{
+  background-color: rgb(16, 122, 184);
+  border: 1px solid rgb(20, 47, 200);
+  color: white;
+}
+.verde{
+  background-color: rgb(148, 25, 192);
+  border: 1px solid rgb(225, 20, 218);
+  color: white;
+}
+button:hover {
+  border-color: #646cff;
+  background-color: white;
+  color: black;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+img{
+  width: 100%;
+  vertical-align: top;
+}
+a{
+  font-size: 0.8em;
+}
+.presentacion{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.usuario{
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px dotted black;
+  box-sizing: border-box;
+  width: 49.5%;
+}
+.foto{
+  border: 1px solid gray;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 20px;
+  width: 170px;
+}
+.datos{
+  flex: 1;
+}
+.botones{
+  width: 110px;
+}
+.usuarios{
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(5,1fr);
+  text-align: center;
+  margin-top: 8px;
+}
+.nombreUsuarios{
+font-size: 1.04em;
+margin-top: 8px;
+}
+@media (max-width: 600px) {
+  button {
+    width: 80px; /* Reduce el ancho del botón */
+  }
+  .usuario {
+    flex-direction: column; /* Cambia a disposición vertical */
+    width: 100%; /* Hace que ocupe todo el ancho */
+  }
+  .foto {
+    width: 100%; /* Hace que la foto ocupe todo el ancho */
+    margin-right: 0; /* Elimina el margen derecho */
+    margin-bottom: 10px; /* Agrega un margen inferior */
+  }
+  .presentacion {
+    justify-content: center; /* Centra los elementos en la presentación */
+  }
+}
